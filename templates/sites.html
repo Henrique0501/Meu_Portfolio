@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block brand %}/{% endblock %}
+<!DOCTYPE html>
+
+{% block import %}
+<link rel="stylesheet" href="{{ url_for('static', filename='sites.css') }}">
+{% endblock %}
+
+{% block title %}
+<title>Websites</title>
+{% endblock %}
+
+{% block content %}
+<body>
+    <section class="section-carousel">
+        <div class="text-carousel">
+            <h1>
+                Confira alguns sites desenvolvidos por mim
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet. Est sunt quia sed quas dolore ut ducimus Quis sed odio dolore
+                    id recusandae pariatur quo nemo inventore.
+            </p>
+        </div>
+        <div class="carousel">
+            <a class="bt left" onclick="sliderScrollLeft()"><</a>
+            <a class="bt right" onclick="sliderScrollRight()">></a>
+            <div class="carousel-content" data-aos="left"  data-aos-delay="0"
+                                                                data-aos-duration="2000"
+                                                                data-aos-easing="ease-out">
+                <a href="" class="first">
+                    <div>
+                        <h2>Site para advocacia</h2>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div>
+                        <h2>Site para casamentos</h2>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div>
+                        <h2>Site para clínica de psicologia</h2>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div>
+                        <h2>Site para clínica de psicologia</h2>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+<img src="{{ url_for('static', filename='rings.png') }}" class="rings">
+<script type="text/javascript" src="{{ url_for('static', filename='carousel.js') }}"></script>
+{% endblock %}
+</body>

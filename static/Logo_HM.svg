@@ -1,0 +1,19 @@
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" width="65.21mm" height="13.26mm" viewBox="0 0 184.85 37.59">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <path class="cls-1" d="M114.9,723.89,93.68,761.48H83.4l22.06-37.59Z" transform="translate(-83.4 -723.89)"/>
+      <path class="cls-1" d="M166.37,723.89l-21.23,37.59H134.87l22.06-37.59Z" transform="translate(-83.4 -723.89)"/>
+      <path class="cls-1" d="M178.27,723.89l22.06,37.59H190.06l-21.23-37.59Z" transform="translate(-83.4 -723.89)"/>
+      <path class="cls-1" d="M234.29,723.89l-21.22,37.59H202.79l22.06-37.59Z" transform="translate(-83.4 -723.89)"/>
+      <path class="cls-1" d="M246.2,723.89l22.05,37.59H258l-21.23-37.59Z" transform="translate(-83.4 -723.89)"/>
+    </g>
+    <path class="cls-1" d="M148,735.38,106,743.48l-4.9,8.43,41.95-8.13Z" transform="translate(-83.4 -723.89)"/>
+  </g>
+</svg>

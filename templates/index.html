@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% block brand %}#{% endblock %}
+
+
+{% block import %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+
+{% block title %}
+<title>Desenvolvedor Henrique Martins</title>
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="wrapper">
+        <section class="topo">
+
+            <div class="apresent">
+                <h1>Olá!</h1>
+                <h1>Eu me chamo <span>Henrique Martins</span></h1>
+                <h2>e trabalho com <span class="input"></span></h2>
+            </div>
+
+            <a href="#back-atuacao" class="link-scroll"><i class="fa-solid fa-angles-down"></i></a>
+        </section>
+
+        <section class="back-atuacao" id="back-atuacao">
+
+        </section>
+
+        <section class="atuacao">
+            <a href="/sites" data-aos="fade-right">
+                <div class="card-atuacao">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Desenvolvimento de sites</h2>
+                    <h3>...já pensou em um site para a sua empresa?</h3>
+                    <p>
+                        Sites desenvolvidos nas linguagens
+                        HTML, CSS, JavasScript e Python!
+                    </p>
+                </div>
+            </a>
+
+            <a href="" data-aos="new-animation">
+                <div class="card-atuacao">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h2>Análise de dados</h2>
+                    <h3>...Python, SQL e dashboards</h3>
+                    <p>
+                        Tenho proeficiência na biblioteca
+                        Pandas da liguagem Python, além de
+                        conhecimentos em SQL.
+                    </p>
+                </div>
+
+            </a>
+
+            <a href="" data-aos="fade-right">
+                <div class="card-atuacao">
+                    <i class="fa-brands fa-python"></i>
+                    <h2>API's</h2>
+                    <h3>...API's construídas em Flask</h3>
+                    <p>
+                        Domino o microframework Flask,
+                        desenvolvendo API's completas
+                        rapidamente.
+                    </p>
+                </div>
+
+            </a>
+        </section>
+
+        <section class="about-sites">
+            <div class="saiba-mais">
+                <img class="note-cel" src="{{ url_for('static', filename='note_cel.png') }}">
+                <div class="lista">
+                    <h1>Posso desenvolver o seu site</h1>
+                    <p>Você pode contar com:</p>
+                    <ul>
+                        <li><i class="fa-solid fa-clock"></i>Entrega em um tempo ágil;</li>
+                        <li><i class="fa-solid fa-dove"></i>Uma estética conforme o seu pedido;</li>
+                        <li><i class="fa-solid fa-mobile"></i>Conteúdo responsivo (se adapta à tela);</li>
+                        <li><i class="fa-solid fa-money-bill-1-wave"></i>Um preço justo.</li>
+                    </ul>
+                    <a href="">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class='motivos'>
+                <div>
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h2>Uma estratégia de marketing para a sua empresa</h2>
+                    <p>
+                        Ter um site é essencial para o sucesso do seu negócio.
+                        Divulgue os seus serviços e produtos com sabedoria e estilo!
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2>Uma ótima forma de divulgar um evento</h2>
+                    <p>
+                        Casamentos, congressos, formaturas...
+                        eventos como esses podem ser muito bem organizados
+                        e digulgados a partir de um site.
+                    </p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                    <h2>Uma plataforma para o seu conteúdo.</h2>
+                    <p>
+                        Quer vender o seu curso? Uma plataforma
+                        eficiente e que se adapte às suas necessidades é fundamental.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="contato" id="contact">
+        <img src="{{ url_for('static', filename='img-contato-linear.png') }}">
+        <form action="/email" method="post">
+            <h1>Precisa de um site?</h1>
+            <p>Entre em contato e faça uma reunião comigo.</p>
+
+            <input type="text" id="input_nome" required placeholder="Nome" class="input-contact" name="name">
+
+            <input type="email" id="input_email" required placeholder="Email" class="input-contact" name="email">
+
+            <input type="tel" id="input_telefone" required placeholder="Telefone" class="input-contact" name="tel">
+
+            <input type="text" id="input_assunto" required placeholder="Assunto" class="input-contact" name="subject">
+
+            <textarea rows="3" required placeholder="Mensagem" class="input-contact" name="msg"></textarea>
+
+
+            <input type="submit" value="Enviar">
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+              {% for category, message in messages %}
+                <div class="{{ category }}">{{ message }}</div>
+              {% endfor %}
+            {% endwith %}
+
+        </form>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".input", {
+        strings: ["Desenvolvimento de sites", "Análise de dados", "API's"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop: true
+        })
+    </script>
+
+{% endblock %}

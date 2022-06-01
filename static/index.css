@@ -1,0 +1,381 @@
+/*:root{
+--amarelo-princ: #ffde00;
+--azul-escuro: rgba(6,1,38,1);
+--azul-claro: rgba(17, 106, 234, 1);
+--azul-mais-claro: #11e4ea;
+--roxo: #2a022e;
+--poller: 'Poller One', cursive;
+--zen: 'Zen Dots', cursive;
+}*/
+
+
+.topo{
+background-image: url('Portifolio_henrique.png');
+background-position: right;
+background-size: cover;
+background-repeat: no-repeat;
+height: 97vh;
+position: relative;
+border-bottom: 2px solid var(--azul-claro);
+}
+
+
+.logo svg:hover{
+fill: var(--amarelo-princ);
+transform: scale(1.1);
+transition: .4s;
+}
+
+.apresent{
+padding-top: 150px;
+margin-left: 30px;
+color: white;
+}
+
+.apresent span{
+color: var(--amarelo-princ);
+font-family: var(--sans-serif);
+font-family: var(--poller);
+}
+
+.apresent h1:nth-child(2){
+font-weight: bold;
+}
+
+.atuacao {
+height: 290px;
+position: absolute;
+top: 58vh;
+width: 800px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.atuacao div{
+width: 260px;
+height: 260px;
+border-radius: 10px;
+background-color: var(--azul-escuro);
+margin-left: 20px;
+margin-top: 15px;
+padding: 10px;
+transition: .15s ease-in;
+border: 1px solid var(--azul-claro);
+}
+
+.atuacao div:hover{
+margin-top: 0;
+transition: .15s ease-in;
+border-color: var(--azul-mais-claro);
+}
+
+.atuacao a{
+text-decoration: none;
+}
+
+.atuacao i{
+font-size: 45px;
+}
+
+.atuacao h2{
+font-size: 20px;
+}
+
+.atuacao h3{
+font-size: 16px;
+}
+
+.atuacao p{
+margin-top: 30px;
+font-size: 16px;
+color: white;
+}
+
+.link-scroll{
+position: absolute;
+bottom: 10px;
+right: 30px;
+text-decoration: none;
+background-color: var(--azul-escuro);
+border: 1px solid var(--azul-escuro);
+padding: 10px;
+border-radius: 10px;
+color: var(--amarelo-princ);
+transition: .5s;
+z-index: 5000;
+}
+
+.link-scroll:hover{
+color: var(--amarelo-princ);
+background-color: var(--roxo);
+border: 1px solid var(--amarelo-princ);
+transition: .5s;
+}
+
+
+
+[data-aos="new-animation"] {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition-property: transform, opacity;
+}
+
+[data-aos="new-animation"].aos-animate {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.back-atuacao{
+width: 100%;
+height: 50px;
+background-image: linear-gradient(45deg, rgba(17, 106, 234, 1) 0%, var(--azul-escuro) 18%, var(--azul-escuro) 89%, rgba(17, 106, 234, 1) 100%);
+box-shadow: 0 40px 140px 50px var(--azul-claro);
+}
+
+.about-sites{
+width: 100%;
+}
+
+.saiba-mais{
+width: 90%;
+margin: 150px auto;
+display: flex;
+align-items: center;
+}
+
+.note-cel{
+width: 50%;
+margin: auto 0;
+vertical-align: middle;
+}
+
+.lista{
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.saiba-mais ul{
+list-style: none;
+line-height: 2em;
+}
+
+.saiba-mais ul li i{
+margin: 0 10px;
+width: 10px;
+}
+
+.lista a{
+background-color: var(--azul-escuro);
+padding: 10px 30%;
+border-radius: 40px;
+color: white;
+text-decoration: none;
+border: 1px solid var(--azul-escuro);
+transition: .4s;
+box-shadow: 3px 3px 10px 3px grey;
+}
+
+.lista a:hover{
+color: var(--azul-claro);
+border: 1px solid var(--azul-claro);
+transition: .4s;
+box-shadow: 3px 3px 5px 1px grey;
+}
+
+.motivos{
+width: 90%;
+display: flex;
+justify-content: space-between;
+margin: 0 auto 150px auto;
+}
+
+.motivos i{
+font-size: 55px;
+}
+
+.motivos div{
+width: 30%
+}
+
+.motivos div h2{
+font-size: 27px;
+}
+
+.contato{
+width: 100%;
+background-image: linear-gradient(45deg, rgba(17, 106, 234, 1) 0%, var(--azul-escuro) 18%, var(--azul-escuro) 89%, rgba(17, 106, 234, 1) 100%);
+display: flex;
+}
+
+.contato img{
+padding: 0;
+width: 50%;
+object-fit: cover;
+}
+.contato form{
+width: 50%;
+}
+
+.contato form h1 {
+/*font-family: var(--zen);*/
+color: var(--azul-claro);
+text-shadow: 1px 1px 20px var(--azul-claro);
+border-bottom: 1px solid white;
+box-shadow: 0px 20px 20px -20px white;
+}
+
+.contato form p{
+color: white;
+}
+
+.contato form input, .contato form textarea{
+display: block;
+margin-top: 20px;
+background-color: transparent;
+border: none;
+width: 90%;
+border-bottom: 1px solid var(--azul-claro);
+border-left: 1px solid var(--azul-claro);
+box-shadow: 1px 0px 15px 0px var(--azul-claro);
+padding: 0 4px;
+font-size: 25px;
+color: white;
+transition: .4s;
+}
+
+.contato form input:last-child{
+background-color: var(--azul-claro);
+margin-bottom: 10px;
+}
+
+.contato form input:last-child:hover{
+box-shadow: 1px 0px 45px 0px var(--azul-claro);
+transition: .4s;
+}
+
+.contato form input:focus, .contato form textarea:focus{
+outline: none;
+box-shadow: 1px 0px 15px 0px white;
+}
+
+.success{
+color: green;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--azul-claro);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--azul-claro);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--azul-claro);
+}
+
+footer{
+background-image: url('fundo-footer.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-posisitom: top center;
+border-top: 2px solid var(--amarelo-princ);
+box-shadow: 0px -1px 15px 0px var(--amarelo-princ);
+width: 100%;
+height: 500px;
+}
+
+
+@media screen and (max-width: 1300px){
+    .atuacao{
+    top: calc(100vh - 125px);
+    }
+
+    .back-atuacao{
+    height: 160px;
+    }
+}
+
+@media screen and (max-width: 940px){
+
+    .atuacao {
+    position: absolute;
+    top: calc(100vh - 75px);
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0 auto;
+    }
+
+    .atuacao div{
+    margin-left: 0;
+    }
+
+    .atuacao div:hover{
+    margin-top: 15px;
+    margin-left: 15px;
+    }
+
+    .topo{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('Portifolio_henrique_cel.jpg');
+    background-position: right bottom;
+    position: relative;
+    }
+
+    [data-aos="new-animation"] {
+    opacity: 0;
+    transform: translateX(100px);
+    transition-property: transform, opacity;
+    }
+
+    .back-atuacao{
+    height: calc(3*(260px+30px));
+    }
+
+    .about-sites .saiba-mais{
+    flex-direction: column;
+    }
+
+    .lista, .note-cel{
+    width: 100%;
+    }
+
+   .lista{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   }
+
+   .motivos{
+   flex-direction: column;
+   }
+
+   .motivos div{
+   width: 90%;
+   }
+
+   .motivos div:nth-child(2){
+   margin-top: 20px;
+   margin-bottom: 20px;
+   }
+
+   .contato{
+   flex-direction: column;
+   }
+
+   .contato img, .contato form{
+   width: 100%;
+   }
+
+   .contato form{
+   margin-top: 10px;
+   margin-left: 10px;
+   }
+
+}
