@@ -5,5 +5,5 @@
 
 <p align="center">
 <h1>Meu_Portfolio</h1>
-Veja como está meu portfólio em desenvolvimento.
+<p>Veja como está meu portfólio em desenvolvimento.</p>
 </p>
