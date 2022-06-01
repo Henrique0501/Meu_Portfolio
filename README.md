@@ -7,11 +7,11 @@
 <p align="center">Veja como está meu portfólio em desenvolvimento.</p>
 
 <p align="center">
-  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+  <a href="https://henriquemartins.herokuapp.com/">Link do projeto</a>
 </p>
 
 <p align="center">
-  <a href="https://henriquemartins.herokuapp.com/">Link do projeto</a>
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
 <p align="center">
