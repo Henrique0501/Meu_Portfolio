@@ -7,7 +7,7 @@
 <p align="center">Veja como está meu portfólio em desenvolvimento.</p>
 
 <p align="center">
-  <a href="https://henriquemartins.herokuapp.com/">Link do projeto</a>
+  <a href="https://henriquemartins.herokuapp.com/" target="_blank">Link do projeto</a>
 </p>
 
 <p align="center">
